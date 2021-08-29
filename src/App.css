@@ -1,38 +1,118 @@
-.App {
+/*** GLOBAL STYLING ***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-area {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+h1 {
   text-align: center;
+  padding: 2rem 0;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*** HOME PAGE - ALL USERS ***/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile-card {
+  width: 20rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  background: #f6f6f6;
+  border-radius: 5px;
+  padding: 2rem 0;
+  margin: 2rem;
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12),
+    0 8px 32px -8px hsla(0, 0%, 0%, 0.14),
+    0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+  transition: all ease 200ms;
+  -webkit-transition: all ease 200ms;
+  -moz-transition: all ease 200ms;
+  -ms-transition: all ease 200ms;
+  -o-transition: all ease 200ms;
+}
+
+.profile-card-header {
+  background-color: #d7d7d7;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-logo {
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-card-body {
+  padding-top: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.website {
+  text-decoration: none;
+  color: #437ff6;
+}
+
+.button {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #437ff6;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+.users {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/*** SINGLE USER PROFILE ***/
+
+.user-details {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  line-height: 2rem;
+  min-width: 20rem;
+}
+
+.user-info {
+  list-style-type: none;
+}
+
+.user-info li::before {
+  content: "- ";
+}
+
+.nested-address {
+  padding-left: 1rem;
 }
