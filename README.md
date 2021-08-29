@@ -24,4 +24,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Live Preview
 
-[Netlify: ](https://www.netlify.com/)
+[https://nifty-lumiere-98794d.netlify.app/](https://nifty-lumiere-98794d.netlify.app/)
