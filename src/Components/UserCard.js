@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom';
 
 const UserCard = ({ name, username, website, link }) => {
 
-    const firstChar = (str, no_of_char) => {
-        return str.split("").splice(0, no_of_char).join("");
-    }
+    // const firstChar = (str, no_of_char) => {
+    //     return str.split("").splice(0, no_of_char).join("");
+    // }
+
+    const firstChar = (str) => str.charAt(0).toUpperCase();
 
     return (
         <div className="profile-card">
             <div className="profile-card-header">
-                <p className="profile-logo">{firstChar(name, 1)}</p>
+                {/* <p className="profile-logo">{firstChar(name, 1)}</p> */}
+                <p className="profile-logo">{firstChar(name)}</p>
             </div>
             <div className="profile-card-body">
                 <h3>{name}</h3>
