@@ -1,3 +1,5 @@
+[![CICD-UserInfo](https://github.com/khanuxd/users-information-react-project/actions/workflows/main.yml/badge.svg)](https://github.com/khanuxd/users-information-react-project/actions/workflows/main.yml)
+
 # Overview
 
 This is a test project to generate user profile from JSON Placeholder API -
